@@ -30,14 +30,14 @@ $('document').ready(()=>{
 
 
     async function funcionGetPartyroomClient(){
-        const peticion = await fetch('http://144.22.251.90:8080/api/Partyroom/save' ,{
+        const peticion = await fetch('http://144.22.251.90:8080/api/Partyroom/all' ,{
             method: 'GET',
             headers:{
                 'Content-Type':'application/json'
             },
         })
 
-        const peticionCliente = await fetch('http://144.22.251.90:8080/api/Partyroom/all' ,{
+        const peticionCliente = await fetch('http://144.22.251.90:8080/api/Client/all' ,{
             method: 'GET',
             headers:{
                 'Content-Type':'application/json'
